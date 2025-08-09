@@ -31,20 +31,16 @@ Es una **instancia en ejecución de una imagen**. Piensa en él como un “proce
 ## 📌 Comandos esenciales
 
 ### 1️⃣ Verificar instalación
-```bash
 docker --version
 docker info
 
 ### 2️⃣ Descargar una imagen existente
-```bash
 docker pull nginx:latest
 
 ### 3️⃣ Listar imágenes locales
-```bash
 docker images
 
 ### 4️⃣ Crear y ejecutar un contenedor
-```bash
 docker run -d --name mi-nginx -p 8080:80 nginx:latest
 
 -d → modo “detached” (en segundo plano).
@@ -52,19 +48,15 @@ docker run -d --name mi-nginx -p 8080:80 nginx:latest
 -p host:container → mapea el puerto 8080 local al puerto 80 del contenedor.
 
 ### 5️⃣ Ver contenedores en ejecución
-```bash
 docker ps
 
 ### 6️⃣ Ver todos los contenedores (incluso detenidos)
-```bash
 docker ps -a
 
 ### 7️⃣ Detener y eliminar contenedores
-```bash
 docker stop mi-nginx
 docker rm mi-nginx
 
 ### 8️⃣ Eliminar imágenes
-```bash
 docker rmi nginx:latest
 
